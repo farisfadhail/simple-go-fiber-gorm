@@ -14,6 +14,10 @@ func RouteInit(app *fiber.App) {
 	
 	api := app.Group("/api")
 
+	api.Get("/", func(c *fiber.Ctx) error {
+		return c.SendString("Welcome to Simple Go Fiber Gorm")
+	})
+
 	// Auth Routes
 	api.Post("/login", handler.LoginHandler).Name("login")
 	
