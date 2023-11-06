@@ -45,7 +45,3 @@ func IsAdmin(ctx *fiber.Ctx) error {
 
 	return ctx.Next()
 }
-
-func PermissionCreate(ctx *fiber.Ctx) error {
-	return ctx.Next()
-}

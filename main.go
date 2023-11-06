@@ -4,6 +4,7 @@ import (
 	"go-fiber-gorm/database/migrations"
 	"go-fiber-gorm/routes"
 	"log"
+	"os"
 
 	"github.com/gofiber/fiber/v2"
 )
@@ -16,5 +17,9 @@ func main() {
 	
 	routes.RouteInit(app)
 
-	log.Fatal(app.Listen("localhost:3000"))
+	err := app.Listen(":3000")
+	if err != nil {
+		log.Println("Failed to listen go fiber server")
+		os.Exit(1)
+	}
 }
