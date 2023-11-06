@@ -1,3 +1,4 @@
+// +heroku goVersion go1.21
 module go-fiber-gorm
 
 go 1.21.1
