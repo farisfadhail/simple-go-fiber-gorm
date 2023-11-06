@@ -10,7 +10,7 @@ import (
 )
 
 func RouteInit(app *fiber.App) {
-	app.Static("/public", config.ProjectRootPath+"/public/asset")
+	app.Static("/public", config.ProjectRootPath + "/public/asset")
 	
 	api := app.Group("/api")
 

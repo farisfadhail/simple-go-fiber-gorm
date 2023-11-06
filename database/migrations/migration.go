@@ -11,7 +11,7 @@ func RunMigration() {
 	db := database.DatabaseInit()
 
 	// db.Migrator().DropTable(&entity.User{})
-	db.Migrator().DropTable(&entity.Book{})
+	// db.Migrator().DropTable(&entity.Book{})
 	// db.Migrator().DropTable(&entity.Category{})
 	// db.Migrator().DropTable(&entity.ImageGallery{})
 	
